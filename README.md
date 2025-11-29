@@ -35,12 +35,11 @@ This project demonstrates how to implement computer vision by **detecting and de
 ##  Repository Structure
 
 # /project root
--scanner.py — Primary functioning QR scanning system in real-time.
--generate_qr.py — Application for generating QR codes for students.
--README.md — Project documentation.
--requirements.txt — Required Python modules/packages.
--/qr_codes — Folder containing images of created/generated QR codes.
-
+│── scanner.py — Primary functioning QR scanning system in real-time.
+│── generate_qr.py — Application for generating QR codes for students.
+│── README.md — Project documentation.
+│── requirements.txt — Required Python modules/packages.
+│── /qr_codes — Folder containing images of created/generated QR codes.
 ##  Requirements
 1. `opencv-python==4.8.1`
 2. `numpy==1.24.3`
