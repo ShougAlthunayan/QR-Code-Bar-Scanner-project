@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-# List of authorized QR codes
+#  authorized QR codes
 authorized_codes = [
     'Shoug Althunayan', 
     'Shahad alhamraa',
@@ -49,7 +49,7 @@ else:
                 access_text = "ACCESS DENIED"
                 color = (0, 0, 255)  # Red
             
-            # Display access result
+            #  access result
             cv2.putText(img, data, (10, 30), cv2.FONT_HERSHEY_COMPLEX, 0.9, (32, 128, 255), 2)
             cv2.putText(img, access_text, (10, 70), cv2.FONT_HERSHEY_COMPLEX, 1, color, 2)
             
