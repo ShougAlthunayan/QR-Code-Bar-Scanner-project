@@ -27,7 +27,7 @@ class QRScanner:
         data, bbox, _ = self.detector.detectAndDecode(image)
         
         if data:
-            print(f"✓ QR Code detected: {data}")
+            print(f" QR Code detected: {data}")
             # Draw bounding box
             if bbox is not None:
                 bbox = bbox.astype(int)
@@ -86,7 +86,15 @@ class QRScanner:
 if __name__ == "__main__":
     scanner = QRScanner()
     
-    # Test: Create and scan QR code
-    print("=== Testing QR Code Scanner ===")
-    qr_file = scanner.create_qr("Hello Computer Vision Project!")
-    scanner.scan_image(qr_file)
+    # Test: Create and scan QR codes with your names only
+    print("=== Testing QR Code Scanner with Student Names ===")
+    
+    # Create QR codes for our names
+    qr_file1 = scanner.create_qr("Shoug Althunayan", "shoug_qr.png")
+    qr_file2 = scanner.create_qr("Shahad alhamraa", "shahad_qr.png")
+    
+    print("Scanning Shoug's QR code...")
+    scanner.scan_image(qr_file1)
+    
+    print("Scanning Shahad's QR code...")
+    scanner.scan_image(qr_file2)
