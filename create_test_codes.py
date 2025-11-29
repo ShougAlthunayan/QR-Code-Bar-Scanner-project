@@ -1,6 +1,6 @@
 import qrcode
 
-# Create QR codes with our names only
+# QR codes with our names 
 student_names = [
     'Shoug Althunayan', 
     'Shahad alhamraa'
