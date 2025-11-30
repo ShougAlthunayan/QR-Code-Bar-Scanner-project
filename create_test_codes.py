@@ -10,17 +10,15 @@ student_credentials = [
 
 print("Creating student QR codes for access control...")
 
-for credential in student_credentials:
-    qr = qrcode.make(credential)
-    # Create filename from ID only (cleaner)
-    student_id = credential.split(' - ')[0]
-    filename = f"student_{student_id}.png"
+for name in student_names:
+    qr = qrcode.make(name)
+    filename = f"{name.replace(' ', '_')}.png"
     qr.save(filename)
-    print(f"✓ Created: {filename} - {credential}")
-
+    print(f" Created: {filename}")
 
 print("\nQR codes created successfully!")
 print("Use these for access control testing:")
-for credential in student_credentials:
-    student_id = credential.split(' - ')[0]
-    print(f"- student_{student_id}.png")
+print("202200662 - Shoug_Althunayan.png")
+print("202100267 - Shahad_Hamraa.png")
+print("202201633 - Jood_Alghamdi.png")
+print("201900253 - Noura_Alafaliq.png")
