@@ -4,7 +4,7 @@ Computer Vision project
 ##  Project Abstract
 In this project, a QR code access control system is developed, using the Python OpenCV package to perform *real-time* QR code access control. By using a webcam, this project enables a user to continuously scan QR codes and decode them, as well as verify whether a user has been granted access.
 
-When a user is authorized, they will see a *green* feedback overlay that says *ACCESS GRANTED. When a user is not authorized, they will see a **red* feedback overlay that says *ACCESS DENIED*. In addition, each student was assigned an individual QR code with their student ID, which was created using the qrcode Python library.
+When a user is authorized, they will see a *green* feedback overlay that says *ACCESS GRANTED*. When a user is not authorized, they will see a *red* feedback overlay that says *ACCESS DENIED*. In addition, each student was assigned an individual QR code with their student ID, which was created using the qrcode Python library.
 
 
 
@@ -66,8 +66,11 @@ python create_test_codes.py
 This will create:
 
 202200662_Shoug_Althunayan.png
+
 202100267_Shahad_Hamraa.png
+
 202201633_Jood_Alghamdi.png
+
 201900253_Noura_Alafaliq.png
 
 ### Run the QR Code Scanner
