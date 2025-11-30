@@ -51,6 +51,7 @@ This project demonstrates how to implement computer vision by *detecting and dec
 Install these packages:
 
 pip install opencv-python numpy qrcode
+
 What each package does:
 
 opencv-python - for webcam and QR code detection
