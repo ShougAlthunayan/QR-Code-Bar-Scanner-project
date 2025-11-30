@@ -26,7 +26,7 @@ else:
         success, img = cap.read()
         
         if not success:
-        break
+           break
         
         # Detect QR code using OpenCV
         data, bbox, _ = qr_detector.detectAndDecode(img)
