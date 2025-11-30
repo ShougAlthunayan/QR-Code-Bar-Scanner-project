@@ -3,10 +3,10 @@ import numpy as np
 
 #  authorized QR codes
 authorized_codes = [
-    'Shoug Althunayan', 
-    'Shahad alhamraa',
-    'COMPUTER VISION PROJECT',
-    'STUDENT ACCESS'
+    '202200662 - Shoug Althunayan', 
+    '202100267 - Shahad Hamraa',
+    '202201633 - Jood Alghamdi',
+    '201900253 - Noura Alafaliq'
 ]
 
 # Initialize webcam
@@ -16,7 +16,7 @@ if not cap.isOpened():
     print("Error: Could not open webcam")
 else:
     print("Access Control System Started!")
-    print("Authorized users: Shoug Althunayan, Shahad alhamraa")
+    print("Authorized Students: ")
     print("Press 'q' to quit")
     
     # Create QR detector
@@ -55,7 +55,7 @@ else:
             
             print(f"Result: {access_text}")
         
-        cv2.imshow('Access Control System - Press Q to quit', img)
+        cv2.imshow('Student Access Control - Press Q to quit', img)
         
         if cv2.waitKey(1) & 0xFF == ord('q'):
             break
