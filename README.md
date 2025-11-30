@@ -35,20 +35,29 @@ This project demonstrates how to implement computer vision by *detecting and dec
 
 ##  Repository Structure
 
-# /project root
+## project root
 -access_scanner.py — Main QR scanning system.
+
 -create_test_codes.py — QR code generator.
+
 -README.md — Project documentation.
+
 -requirements.txt — Required packages.
+
 -*.png — Generated QR code files.
 
 ##  Requirements
-opencv-python
-numpy
-qrcode
 
-## To install everything use:
+Install these packages:
+
 pip install opencv-python numpy qrcode
+What each package does:
+
+opencv-python - for webcam and QR code detection
+
+numpy - for image processing
+
+qrcode - for generating student QR codes
 
 ##  How to run the project
 
