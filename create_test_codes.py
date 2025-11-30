@@ -10,7 +10,7 @@ student_credentials = [
 
 print("Creating student QR codes for access control...")
 
-for name in student_names:
+for name in student_credentials:
     qr = qrcode.make(name)
     filename = f"{name.replace(' ', '_')}.png"
     qr.save(filename)
