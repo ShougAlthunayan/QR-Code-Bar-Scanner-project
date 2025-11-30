@@ -16,7 +16,7 @@ if not cap.isOpened():
     print("Error: Could not open webcam")
 else:
     print("Access Control System Started!")
-    print("Authorized Students: ")
+    print("Authorized users: Shoug Althunayan, Shahad Hamraa, Jood Alghamdi, Noura Alafaliq")
     print("Press 'q' to quit")
     
     # Create QR detector
