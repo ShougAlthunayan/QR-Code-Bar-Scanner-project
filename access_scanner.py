@@ -35,14 +35,14 @@ else:
             print(f"Scanned: {data}")
             
             # Draw bounding box
-   
-       if bbox is not None:
+            if bbox is not None:
                 # Draw lines between all points
                 points = bbox[0]
                 for i in range(len(points)):
                     pt1 = tuple(points[i])
                     pt2 = tuple(points[(i + 1) % len(points)])
                     cv2.line(img, pt1, pt2, (255, 0, 255), 3)
+            
             # Check access
             if data in authorized_codes:
                 access_text = "ACCESS GRANTED"
