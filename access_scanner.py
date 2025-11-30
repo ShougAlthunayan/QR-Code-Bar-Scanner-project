@@ -26,20 +26,18 @@ else:
         success, img = cap.read()
         
         if not success:
-            break
+        break
         
         # Detect QR code using OpenCV
         data, bbox, _ = qr_detector.detectAndDecode(img)
         
         if data:
-            print(f"Scanned: {data}")
+        print(f"Scanned: {data}")
             
             # Draw bounding box
-     
-if bbox is not None:
-    bbox = bbox.astype(int)
-    # Draw as polygon
-    cv2.polylines(img, [bbox[0]], True, (255, 0, 255), 3)
+        if bbox is not None:
+            bbox = bbox.astype(int)
+            cv2.polylines(img, [bbox[0]], True, (255, 0, 255), 3)
             
             # Check access
             if data in authorized_codes:
