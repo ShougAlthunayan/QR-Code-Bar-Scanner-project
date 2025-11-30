@@ -13,6 +13,15 @@ This project demonstrates how to implement computer vision by *detecting and dec
 
 
 
+##  Team Members
+| Name  | Role                    |
+| Shahad Hamraa | Development and documentation  |
+| Shoug Althunayan | QR Code Generation and testing |
+| Noura Alafaliq | Code Structuring and Report Writing |
+| Jood Alghamdi | Research and System Design |
+
+
+
 ##  Features
 - Real-time scanning of QR codes using *OpenCV QRCodeDetector*
 - Automatic detection and decoding of QR codes
