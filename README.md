@@ -15,8 +15,8 @@ This project demonstrates how to implement computer vision by *detecting and dec
 
 ##  Team Members
 | Name  | Role                    |
-| Shahad Hamraa | Development and documentation  |
-| Shoug Althunayan | QR Code Generation and testing |
+| Shahad Hamraa | Development and testing  |
+| Shoug Althunayan | QR Code Generation and documentation |
 | Noura Alafaliq | Code Structuring and Report Writing |
 | Jood Alghamdi | Research and System Design |
 
